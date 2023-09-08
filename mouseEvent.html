@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html Lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>mouseEvent</title>
+    <style>
+        ul {
+            font-family: '나눔손글씨 펜', '여기어때 잘난체', '맑은 고딕',sans-serif; 
+            line-height: 1.6;
+            font-size: 30px;
+            
+        }
+        a:link {
+            color: #B9005B;
+        }
+        /* 
+        :, :: 
+            가상 선택자로 다양한 종류가 있으며 주로 실제하는 요소와 함께 작성
+            의사 클래스, 의사 요소, 수열 선택자.....
+            :link, :visited, :hover, :focus, :checked ...
+        
+        */
+        ::selection {
+            background-color: #FEE0C0;
+            color: #820000;
+        }
+        h1::selection {
+            background-color: #f8b7c0;
+        }
+        h1 {
+            color: #FF7C7C;
+            font-family: '여기어때 잘난체', '맑은 고딕', '나눔고딕', sans-serif;
+        }
+    /*
+        a:link {
+            /* 클릭했을 때 */
+            background-color: #fff;
+        }
+        a:visited {
+            /* 링크 상태일때(기본) */
+            color: #769FCD;
+            text-decoration: none;
+        }
+        a:hover{
+            /* 방문했을 때 */
+            color: #D6E6F2;
+        }
+        a:active{
+            /* 마우스 위에 올렸을 때 */
+            text-decoration: line-through;
+        }
+*/
+    a {
+        color:inherit
+        text-decoration
+    }
+    a:hover {
+        background-color: ofange;
+        color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>마우스 이벤트 mouse event</h1>
+    <ul>
+        <li><a href="https://www.naver.com/" target="_blank">네이버</a></li>
+        <li><a href="https://www.daum.net/" target="_blank">다음</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">인스타그램</a></li>
+        <li><a href="https://www.google.co.kr/" target="_blank">구글</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">페이스북</a></li>
+        <li><a href="https://twitter.com/" target="_blank">트위터</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html Lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>width+height</title>
+    <style>
+/*
+        블록 요소: p, div, h1, header, main, article, form, ul...
+        ㄴ 가로 값의 경우 부모 요소의 가로 값을 받음
+        ㄴ 일반적인 흐름에서는 블록 요소 옆에 다른 요소가 올 수 없음
+        ㄴ 자식으로 블록, 인라인 요소 등 대부분이 올 수 있음
+        ㄴ 세로 값의 경우 자식 요소의 높이 값을 가져옴
+        ㄴ width, height로 제어 가능
+
+        인라인 요소: span, img, a, em, input, strong...
+        ㄴ 가로 값의 경우 자식(컨텐츠)의 값을 가져옴
+        ㄴ 인라인 요소 옆에 다른 인라인 요소가 올 수 있음
+        ㄴ 자식으로 인라인 요소만 올 수 있음
+        ㄴ 세로 값의 경우 자식 요소의 높이 값을 가져옴
+        ㄴ width, height로 제어 불가능
+*/
+.container {
+    background-color: #FFF5EB;
+    width: 100%; height: 50%;
+}
+.container .block_box1 {
+    background-color: #DEEDF0
+;
+    width: 70%; height: 70%;
+}
+.container .inline_box1 {
+    background-color: #F4C7AB;
+    width: 300px; height: 100px;
+}
+.block_box2 {
+    background-color: #016A70;
+    height: 50px;
+}
+.inline_box2 {
+    background-color: #D2DE32;
+    height: 50px;
+
+}
+    </style>
+</head>
+<body>
+    <h1>가로 세로 영역 제어 width, height</h1>
+    <div class="container">
+        <div class="block_box1">블록 요소</div>
+        <span class="inline_box1">인라인 요소</span>
+    </div>
+
+    <p class="block_box2">1</p>
+    <span class="inline_box2">1</span>
+    
+</body>
+</html>
